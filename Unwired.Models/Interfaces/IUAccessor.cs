@@ -1,7 +1,6 @@
 ﻿namespace Unwired.Models.Interfaces;
 
-[Obsolete("Use the struct IUAccessor")]
-public interface IUnwiredAccessor
+public interface IUAccessor
 {
     Guid? AccountId { get; set; }
     Guid? TenantId { get; set; }

@@ -2,9 +2,11 @@
 
 Open-source **Commons Features** developed to facilitate the creation of a new project in .Net, providing some commons features.
 
-- 👉 [Nuget Package](https://www.nuget.org/packages/Unwired.Models) - `nuget page`
+## ✨ Important
+> Some names have been changed to have a U prefix. The idea is to make it easier to identify the lib's Types/Models
+The old names will carry over for backwards compatibility. But in future versions they will be removed. 
 
-<br />
+- 👉 [Nuget Package](https://www.nuget.org/packages/Unwired.Models) - `nuget page`
 
 > Something is missing? Submit a new `product feature request` using the [issues tracker](https://github.com/leandrocavalheiro/unwired.models/issues)..
 
@@ -23,8 +25,6 @@ $ Install-Package Unwired.Models
 ```bash
 $ dotnet add package Unwired.Models
 ```
-
-<br />
 
 > 👉 **Step 2** - Register Service
 In program.cs, add the call for services.AddUnwiredModels. This register it's necessary for use Criptography Methods.

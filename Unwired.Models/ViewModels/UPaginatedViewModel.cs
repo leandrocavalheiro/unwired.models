@@ -1,17 +1,16 @@
 ﻿namespace Unwired.Models.ViewModels;
 
-[Obsolete("Use the struct UPaginatedViewModel")]
-public struct PaginatedViewModel<T>
+public struct UPaginatedViewModel<TResult>
 {
-    public ICollection<T> Items { get; set; }
+    public ICollection<TResult> Items { get; set; }
     public int Page { get; }
     public int PageSize { get; }
     public int TotalRecords { get; set; }
     public int TotalPages { get; set; }
 
-    public PaginatedViewModel(ICollection<T> items, int page, int pageSize, int totalRecords, int totalPages)
+    public UPaginatedViewModel(ICollection<TResult> items, int page, int pageSize, int totalRecords, int totalPages)
     {
-        Items = items ?? new List<T>();
+        Items = items ?? new List<TResult>();
         Page = page;
         PageSize = pageSize;
         TotalRecords = totalRecords;

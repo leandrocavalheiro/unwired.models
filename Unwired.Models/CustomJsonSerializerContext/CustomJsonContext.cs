@@ -8,6 +8,11 @@ namespace Unwired.Models.CustomJsonSerializerContext;
 [JsonSerializable(typeof(ICollection<Notification>))]
 [JsonSerializable(typeof(IList<Notification>))]
 [JsonSerializable(typeof(Notification))]
+
+[JsonSerializable(typeof(IEnumerable<UNotification>))]
+[JsonSerializable(typeof(ICollection<UNotification>))]
+[JsonSerializable(typeof(IList<UNotification>))]
+[JsonSerializable(typeof(UNotification))]
 public partial class CustomJsonContext : JsonSerializerContext
 {
 }

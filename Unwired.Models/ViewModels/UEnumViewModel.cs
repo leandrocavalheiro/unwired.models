@@ -1,7 +1,6 @@
-﻿namespace Unwired.Models.Enumarators;
+﻿namespace Unwired.Models.ViewModels;
 
-[Obsolete("Use the struct UEnumViewModel")]
-public struct EnumViewModel
+public struct UEnumViewModel
 {
     public string Key { get; set; }
     public string Value { get; set; }
