@@ -1,7 +1,6 @@
 ﻿namespace Unwired.Models.ViewModels;
 
-[Obsolete("Use the struct UTokenResultViewModel")]
-public struct TokenResultViewModel
+public struct UTokenResultViewModel
 {
     public Guid UserId { get; set; }
     public string AccessToken { get; set; }

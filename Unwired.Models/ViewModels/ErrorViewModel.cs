@@ -2,6 +2,7 @@
 
 namespace Unwired.Models.ViewModels;
 
+[Obsolete("Use the struct UErrorViewModel")]
 public struct ErrorViewModel
 {
     public Notification[] Error { get; set; }

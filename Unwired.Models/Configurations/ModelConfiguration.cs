@@ -9,5 +9,6 @@ public static class ModelConfiguration
     public static void AddUnwiredModels(this IServiceCollection services)
     {
         services.AddScoped<IUnwiredAccessor, UnwiredAccessor>();
+        services.AddScoped<IUAccessor, UAccessor>();
     }
 }

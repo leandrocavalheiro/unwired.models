@@ -3,8 +3,7 @@ using Unwired.Models.CustomJsonSerializerContext;
 
 namespace Unwired.Models.Dto;
 
-[Obsolete("Use the struct UNotification")]
-public struct Notification
+public struct UNotification
 {
     public string Field { get; set; }
     public string MessageCode { get; set; }
@@ -12,7 +11,7 @@ public struct Notification
     public int? Status { get; set; }
     public string InnerException { get; set; }
     public string StackTrace { get; set; }
-    public Notification(string field, string messageCode, string message, int? status = null, string innerException = null, string stackTrace = null)
+    public UNotification(string field, string messageCode, string message, int? status = null, string innerException = null, string stackTrace = null)
     {
         Field = field;
         MessageCode = messageCode;
@@ -23,6 +22,6 @@ public struct Notification
     }
     public override string ToString()
     {
-        return JsonSerializer.Serialize(this, CustomJsonContext.Default.Notification);
+        return JsonSerializer.Serialize(this, CustomJsonContext.Default.UNotification);
     }
 }
