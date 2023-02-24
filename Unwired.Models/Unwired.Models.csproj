@@ -3,10 +3,10 @@
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
   <PropertyGroup>
-	  <VersionSuffix>0.1.0</VersionSuffix>
+	  <VersionSuffix>0.1.1</VersionSuffix>
 	  <AssemblyVersion Condition=" '$(VersionSuffix)' == '' ">0.0.1</AssemblyVersion>
 	  <AssemblyVersion Condition=" '$(VersionSuffix)' != '' ">$(VersionSuffix)</AssemblyVersion>
 	  <Version Condition=" '$(VersionSuffix)' == '' ">0.0.1</Version>
@@ -17,10 +17,12 @@
 	  <Product>Unwired.Models</Product>
 	  <Description>Models Definitions</Description>
 	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <RepositoryUrl>https://github.com/leandrocavalheiro/unwired.models</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
-	 <None Include="..\README.md" Pack="true" PackagePath="$(PackageReadmeFile)"/>
+	 <None Include="..\README.md" Pack="true" PackagePath="$(PackageReadmeFile)" />
   </ItemGroup>
 
 </Project>
