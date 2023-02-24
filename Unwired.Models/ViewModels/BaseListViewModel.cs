@@ -1,7 +1,7 @@
 ﻿namespace Unwired.Models.ViewModels;
 
 [Obsolete("Use the struct UBaseListViewModel")]
-public struct BaseListViewModel
+public abstract class BaseListViewModel
 {
     public Guid Id { get; set; }
     public Guid? AccountId { get; set; }
