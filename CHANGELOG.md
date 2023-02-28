@@ -11,3 +11,6 @@ All notable changes to this project will be documented in this file.
 
 ## 🎫 [v0.1.2]
 > ⚡ **Feature** - Change XBaseListViewModel and XUBaseViewModel to abstract class
+
+## 🎫 [v0.1.3]
+> ⚡ **Feature** - Update Mediatr Lib to 12.0.1
