@@ -1,6 +1,6 @@
 ﻿namespace Unwired.Models.ViewModels;
 
-public struct UBaseListViewModel
+public abstract class UBaseListViewModel
 {
     public Guid Id { get; set; }
     public Guid? AccountId { get; set; }
